@@ -1,0 +1,17 @@
+[2022-04-18 06:32:55] local.ERROR: Command "config" is not defined.
+
+Did you mean one of these?
+    config:cache
+    config:clear {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"config\" is not defined.
+
+Did you mean one of these?
+    config:cache
+    config:clear at /var/www/html/travel_guide/vendor/symfony/console/Application.php:676)
+[stacktrace]
+#0 /var/www/html/travel_guide/vendor/symfony/console/Application.php(237): Symfony\\Component\\Console\\Application->find('config')
+#1 /var/www/html/travel_guide/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /var/www/html/travel_guide/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/html/travel_guide/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/html/travel_guide/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
